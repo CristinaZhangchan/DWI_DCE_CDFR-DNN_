@@ -8,9 +8,9 @@
 
 #### Usage of these codes:
 
-1.using 'parameters_generate.py' to generate blank dictionary.
+1.Using 'parameters_generate.py' to generate blank dictionary.
 
-2.using 'train_model.py' and 'train_fusion_model.py'to train model with different methods. The weights of trained model will stored in dictionary.
+2.Using 'train_model.py' and 'train_fusion_model.py'to train model with different methods. The weights of trained model will stored in dictionary.
 
 3.Model architecture can be seen in 'model_module.py'.
 
@@ -18,7 +18,7 @@
 
 5.Generation of dataset for training can be seen in 'dataset.py'.
 
-6.'model_test.py'. is to caculate the value of Accuracy and AUC.
+6.'model_test.py' is to caculate the value of Accuracy and AUC.
 
 7.The preprocessed datasets and the weights of trainned models are avaliable (https://www.kaggle.com/datasets/starzh10/breastcaner-subtypes).
 
