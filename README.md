@@ -18,8 +18,8 @@
 
 5.Generation of dataset for training can be seen in 'dataset.py'.
 
-6.'model_test.py' is to caculate the value of Accuracy and AUC.
+6.The 'model_test.py' is to caculate the value of Accuracy and AUC.
 
-7.The preprocessed datasets and the weights of trainned models are avaliable (https://www.kaggle.com/datasets/starzh10/breastcaner-subtypes).
+7.The processed datasets are avaliable (https://www.kaggle.com/datasets/starzh10/breastcaner-subtypes).
 
 In case you have any questions, contact me at E-mail: zixiangkuai@126.com
