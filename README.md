@@ -18,7 +18,7 @@
 
 5.Detials of dataset can be seen in 'dataset.py'.
 
-6.using 'model_test.py' to caculate the accuracies and AUCs.
+6.Using 'model_test.py' to caculate the accuracies and AUCs.
 
 7.The processed datasets are openly avaliable at https://www.kaggle.com/datasets/starzh10/breastcaner-subtypes.
 
