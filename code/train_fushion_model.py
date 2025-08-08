@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r'D:\DeepLearning\code')
+sys.path.insert(0, '/content/code/')
 import torch as torch
 from torchvision import transforms
 import os
@@ -170,5 +170,6 @@ model_dict[finetune_dwikey]=dwi_model.state_dict()
 model_dict[finetune_dcekey]=dce_model.state_dict()
 model_dict[finetune_fusionkey]=fusion_model.state_dict()
 torch.save(model_dict,r"D:\DeepLearning\data\model_dict.pth")
+
 
 
