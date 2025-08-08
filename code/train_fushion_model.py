@@ -169,7 +169,8 @@ model_dict=torch.load(r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict
 model_dict[finetune_dwikey]=dwi_model.state_dict()
 model_dict[finetune_dcekey]=dce_model.state_dict()
 model_dict[finetune_fusionkey]=fusion_model.state_dict()
-torch.save(model_dict,r"D:\DeepLearning\data\model_dict.pth")
+torch.save(model_dict,r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
+
 
 
 
