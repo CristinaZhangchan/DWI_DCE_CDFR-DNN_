@@ -1,5 +1,6 @@
 import sys
-sys.path.append(r'D:\DeepLearning\code')
+sys.path.insert(0, '/content/code/')
+
 import torch as torch
 from torchvision import transforms
 import os
@@ -13,7 +14,7 @@ from model_test import *
 
 warnings.filterwarnings('ignore')
 torch.set_default_tensor_type(torch.DoubleTensor)
-parameters=torch.load(r"D:\DeepLearning\data\parameters.pth")
+parameters=torch.load(r"/kaggle/input/breastcaner-subtypes/parameters/parameters.pth")
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 #
 method='dwi'
@@ -103,6 +104,7 @@ model,train_acc_history,train_loss_history,val_acc_history,val_loss_history= tra
 
 single_model_test(model, dataloaders_dict,parameters['device'])
 
-model_dict=torch.load(r"D:\DeepLearning\data\model_dict.pth")
+model_dict=torch.load(r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
 model_dict[key]=model.state_dict()
-torch.save(model_dict,r"D:\DeepLearning\data\model_dict.pth")
+torch.save(model_dict,r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
+
