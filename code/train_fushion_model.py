@@ -13,8 +13,8 @@ from model_test import *
 
 warnings.filterwarnings('ignore')
 torch.set_default_tensor_type(torch.DoubleTensor)
-parameters=torch.load(r"/kaggle/input/breastcaner-subtypes/parameters")
-model_dict=torch.load(r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
+parameters=torch.load(r"/kaggle/working/breastcaner-subtypes/parameters/parameters.pth")
+model_dict=torch.load(r"/kaggle/working/breastcaner-subtypes/model_dict/model_dict.pth")
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 #
 fold=0
@@ -165,11 +165,12 @@ dwi_model,dce_model,fusion_model,train_acc_history,train_loss_history,val_acc_hi
 
 fusion_model_test(dwi_model,dce_model,fusion_model, dataloaders_dict,device)
 
-model_dict=torch.load(r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
+model_dict=torch.load(r"/kaggle/working/breastcaner-subtypes/model_dict/model_dict.pth")
 model_dict[finetune_dwikey]=dwi_model.state_dict()
 model_dict[finetune_dcekey]=dce_model.state_dict()
 model_dict[finetune_fusionkey]=fusion_model.state_dict()
-torch.save(model_dict,r"/kaggle/input/breastcaner-subtypes/model_dict/model_dict.pth")
+torch.save(model_dict,r"/kaggle/working/breastcaner-subtypes/model_dict/model_dict.pth")
+
 
 
 
